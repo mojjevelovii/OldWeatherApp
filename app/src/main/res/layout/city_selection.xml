@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lime"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_city_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base_margins"
+        android:text="@string/city_selection"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_large"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_city_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/base_margins"
+        android:layout_marginStart="@dimen/base_margins"
+        android:drawableEnd="@drawable/ic_search"
+        android:hint="@string/prompt_text"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <ListView
+        android:id="@+id/lv_city_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
