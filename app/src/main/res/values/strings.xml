@@ -10,6 +10,6 @@
     <string name="dark_theme">Dark theme</string>
     <string name="temperature_units">Temperature in F°</string>
     <string name="wind_speed">Wind speed</string>
-    <string name="atmosphere_pressure">Atmosphere pressure</string>
+    <string name="atmosphere_pressure">Pressure</string>
 
 </resources>

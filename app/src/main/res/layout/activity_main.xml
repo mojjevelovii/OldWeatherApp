@@ -16,7 +16,9 @@
         android:text="@string/moscow"
         android:textAlignment="center"
         android:textSize="@dimen/font_large"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
