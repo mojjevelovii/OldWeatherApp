@@ -1,15 +1,15 @@
 package ru.geekbrains.weatherApp;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.widget.CheckBox;
 import android.widget.Switch;
 import android.widget.Toast;
+
+import ru.geekbrains.weatherApp.viewStateHolders.PropertiesViewStateHolder;
 
 public class PreferencesActivity extends AppCompatActivity {
     private static final String THEME = "dark";
@@ -41,10 +41,10 @@ public class PreferencesActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         showToast("on start");
-        swDarkTheme.setChecked(ViewStateHolder.getInstance().isTheme());
-        swTemperatureUnits.setChecked(ViewStateHolder.getInstance().isUnits());
-        cbAtmospherePressure.setChecked(ViewStateHolder.getInstance().isPressure());
-        cbWindSpeed.setChecked(ViewStateHolder.getInstance().isWind());
+        swDarkTheme.setChecked(PropertiesViewStateHolder.getInstance().isTheme());
+        swTemperatureUnits.setChecked(PropertiesViewStateHolder.getInstance().isUnits());
+        cbAtmospherePressure.setChecked(PropertiesViewStateHolder.getInstance().isPressure());
+        cbWindSpeed.setChecked(PropertiesViewStateHolder.getInstance().isWind());
     }
 
     @Override
@@ -63,10 +63,10 @@ public class PreferencesActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         showToast("on stop");
-        ViewStateHolder.getInstance().setTheme(swDarkTheme.isChecked());
-        ViewStateHolder.getInstance().setUnits(swTemperatureUnits.isChecked());
-        ViewStateHolder.getInstance().setPressure(cbAtmospherePressure.isChecked());
-        ViewStateHolder.getInstance().setWind(cbWindSpeed.isChecked());
+        PropertiesViewStateHolder.getInstance().setTheme(swDarkTheme.isChecked());
+        PropertiesViewStateHolder.getInstance().setUnits(swTemperatureUnits.isChecked());
+        PropertiesViewStateHolder.getInstance().setPressure(cbAtmospherePressure.isChecked());
+        PropertiesViewStateHolder.getInstance().setWind(cbWindSpeed.isChecked());
     }
 
     @Override

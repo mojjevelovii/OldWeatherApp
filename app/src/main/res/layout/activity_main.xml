@@ -55,4 +55,13 @@
         android:text="@string/filling"
         android:textAlignment="center"
         android:textSize="@dimen/font_medium" />
+
+    <Button
+        android:id="@+id/b_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/base_margins"
+        android:backgroundTint="@color/buttonColor"
+        android:text="@string/extra" />
 </LinearLayout>

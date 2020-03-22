@@ -11,4 +11,5 @@
     <string name="temperature_units">Температура в F°</string>
     <string name="wind_speed">Скорость ветра</string>
     <string name="atmosphere_pressure">Давление</string>
+    <string name="extra">Открыть Ya.Pogoda</string>
 </resources>
