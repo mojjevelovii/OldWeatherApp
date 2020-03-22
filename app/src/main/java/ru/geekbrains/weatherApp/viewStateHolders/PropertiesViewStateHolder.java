@@ -1,19 +1,19 @@
-package ru.geekbrains.weatherApp;
+package ru.geekbrains.weatherApp.viewStateHolders;
 
-public class ViewStateHolder {
+public class PropertiesViewStateHolder {
     private boolean theme;
     private boolean units;
     private boolean pressure;
     private boolean wind;
-    private static volatile ViewStateHolder instance;
+    private static volatile PropertiesViewStateHolder instance;
 
-    public static ViewStateHolder getInstance() {
-        ViewStateHolder localInstance = instance;
+    public static PropertiesViewStateHolder getInstance() {
+        PropertiesViewStateHolder localInstance = instance;
         if (localInstance == null) {
-            synchronized (ViewStateHolder.class) {
+            synchronized (PropertiesViewStateHolder.class) {
                 localInstance = instance;
                 if (localInstance == null) {
-                    instance = localInstance = new ViewStateHolder();
+                    instance = localInstance = new PropertiesViewStateHolder();
                 }
             }
         }
