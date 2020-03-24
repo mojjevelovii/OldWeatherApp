@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == SELECT_CITY_REQUEST_CODE) {
+        if (requestCode == SELECT_CITY_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
             tvCity.setText(data.getStringExtra(CitySelectionActivity.CITY_NAME));
         }
         super.onActivityResult(requestCode, resultCode, data);
